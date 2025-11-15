@@ -1,0 +1,1 @@
+INFO CPU GAMMA:12th Gen Intel(R) Core(TM) i7-1255U (1.70 GHz)
