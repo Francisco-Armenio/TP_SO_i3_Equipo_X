@@ -17,4 +17,29 @@ Merge pull request
 
 Confirm merge
 
+RESPUESTAS DE GAMMA:
+d) ¿Las ramas creadas por BETA y GAMMA quedan con datos actualizados?
+Sí, las ramas remotas quedan actualizadas con todos los commits que se subieron. Cada integrante ve la rama actualizada cuando hace “git fetch” y “git checkout”. 
+
+e) Detalle (explique) los problemas que tuvieron al hacer el merge.
+El principal problema fueron los conflictos de merge, que ocurrieron porque modificamos los archivos al mismo tiempo (datos.txt y beta.txt) y Git no pudo decidir qué parte conservar.
+
+f) ¿Qué debió hacer GAMMA en el punto 7 para poder hacer lo pedido?
+
+1) Obtener la rama actualizada de BETA:
+   git fetch origin
+   git checkout BETA-ARMENIO
+
+2) Modificar beta.txt:
+   ipconfig >> beta.txt
+   echo "GAMMA: Ciro Agustín Acuña" >> beta.txt
+   echo "Hora: hora" >> beta.txt
+
+3) Subir los cambios:
+   git add .
+   git commit -m "GAMMA: agrego mis datos a beta.txt"
+
+5) Subir definitivamente:
+   git push
+
 
